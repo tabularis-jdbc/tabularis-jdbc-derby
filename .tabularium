@@ -1,10 +1,12 @@
 {
   "$schema": "https://registry.tabularis.dev/manifest.schema.json?kind=driver",
-  "name": "jdbc-derby",
+  "id": "jdbc-derby",
+  "name": "Apache Derby JDBC",
   "version": "0.1.0",
   "description": "Apache Derby embedded database via JDBC",
   "default_port": null,
   "executable": "tabularis-jdbc",
+  "connection_metadata": true,
   "capabilities": {
     "schemas": false,
     "views": true,
@@ -29,144 +31,5 @@
       "description": "Override the default JDBC driver Maven coordinate"
     }
   ],
-  "data_types": [
-    {
-      "name": "INTEGER",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "BIGINT",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "SMALLINT",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "FLOAT",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "DOUBLE",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "DECIMAL",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": true
-    },
-    {
-      "name": "NUMERIC",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": true
-    },
-    {
-      "name": "REAL",
-      "category": "numeric",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "VARCHAR",
-      "category": "string",
-      "requires_length": true,
-      "requires_precision": false
-    },
-    {
-      "name": "CHAR",
-      "category": "string",
-      "requires_length": true,
-      "requires_precision": false
-    },
-    {
-      "name": "TEXT",
-      "category": "string",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "CLOB",
-      "category": "string",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "DATE",
-      "category": "date",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "TIME",
-      "category": "date",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "TIMESTAMP",
-      "category": "date",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "BOOLEAN",
-      "category": "other",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "BLOB",
-      "category": "binary",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "BINARY",
-      "category": "binary",
-      "requires_length": true,
-      "requires_precision": false
-    },
-    {
-      "name": "VARBINARY",
-      "category": "binary",
-      "requires_length": true,
-      "requires_precision": false
-    },
-    {
-      "name": "UUID",
-      "category": "other",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "JSON",
-      "category": "json",
-      "requires_length": false,
-      "requires_precision": false
-    },
-    {
-      "name": "JSONB",
-      "category": "json",
-      "requires_length": false,
-      "requires_precision": false
-    }
-  ],
-  "type_mappings": {
-    "DATETIME": "TIMESTAMP",
-    "INT": "INTEGER",
-    "BOOL": "BOOLEAN",
-    "BYTEA": "BLOB"
-  }
+  "data_types": []
 }
